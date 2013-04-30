@@ -50,21 +50,13 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include dnsmasq
   include git
-  include hub
-  include nginx
-  include nvm
+  include github_for_mac
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
-
-  # node versions
-  include nodejs::0-4
-  include nodejs::0-6
-  include nodejs::0-8
 
   # default ruby versions
   include ruby::1_8_7
@@ -85,4 +77,44 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # osx setings
+  include osx::global::disable_key_press_and_hold
+  include osx::global::enable_keyboard_control_access
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
+
+  include osx::dock::autohide
+
+  include osx::universal_access::ctrl_mod_zoom
+
+  include osx::no_network_dsstores
+
+  # Firefox
+  include firefox
+
+  # tmux
+  include tmux
+
+  # virtual box
+  include virtuabox
+
+  # hipchat
+  include hipchat
+
+  # chrome
+  include chrome
+
+  # memcached
+  include memcached
+
+  # postgreql
+  include postgresql
+
+  # wget
+  include wget
+
+  # macvim
+  include macvim
+
 }
