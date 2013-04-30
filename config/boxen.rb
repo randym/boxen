@@ -6,7 +6,7 @@ ENV['BOXEN_HOME'] = '~/boxen'
 
 # Change the repo boxen will use.
 ENV['BOXEN_REPO_NAME'] = 'randym/boxen'
-
+ENV['BOXEN_SRC_DIR'] = '/Users/randym
 # Boxen binary packaging
 # ENV["BOXEN_S3_ACCESS_KEY"] = ''
 # ENV["BOXEN_S3_SECRET_KEY"] = ''
