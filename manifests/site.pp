@@ -73,7 +73,7 @@ node default {
     ]:
   }
 
-  file { "${boxen::config::srcdir}/our-boxen":
+  file { "${boxen::config::srcdir}/boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
@@ -97,7 +97,7 @@ node default {
   include tmux
 
   # virtual box
-  include virtuabox
+  include virtualbox
 
   # hipchat
   include hipchat

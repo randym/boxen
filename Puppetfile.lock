@@ -4,9 +4,14 @@ GITHUBTARBALL
     boxen (1.2.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-dnsmasq
+  remote: boxen/puppet-chrome
   specs:
-    dnsmasq (1.0.0)
+    chrome (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -19,29 +24,39 @@ GITHUBTARBALL
     git (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-hipchat
+  specs:
+    hipchat (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.1.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-hub
+  remote: boxen/puppet-macvim
   specs:
-    hub (1.0.0)
+    macvim (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nginx
+  remote: boxen/puppet-memcached
   specs:
-    nginx (1.1.0)
+    memcached (1.2.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nodejs
+  remote: boxen/puppet-osx
   specs:
-    nodejs (1.0.0)
+    osx (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-nvm
+  remote: boxen/puppet-postgresql
   specs:
-    nvm (1.0.0)
+    postgresql (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
@@ -52,6 +67,26 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sysctl
+  specs:
+    sysctl (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
 
 GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
@@ -65,16 +100,23 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 1.2.0)
-  dnsmasq (= 1.0.0)
+  chrome (= 1.1.0)
+  firefox (= 1.0.6)
   gcc (= 1.0.0)
   git (= 1.0.0)
+  github_for_mac (= 1.0.1)
+  hipchat (= 1.0.2)
   homebrew (= 1.1.2)
-  hub (= 1.0.0)
   inifile (= 0.9.0)
-  nginx (= 1.1.0)
-  nodejs (= 1.0.0)
-  nvm (= 1.0.0)
+  macvim (= 1.0.0)
+  memcached (= 1.2.0)
+  osx (= 1.1.0)
+  postgresql (= 1.0.0)
   ruby (= 3.1.0)
   stdlib (= 3.0.0)
   sudo (= 1.0.0)
+  sysctl (= 1.0.0)
+  tmux (= 1.0.2)
+  virtualbox (= 1.0.2)
+  wget (= 1.0.0)
 
