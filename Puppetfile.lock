@@ -96,7 +96,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (3.0.0)
+    stdlib (4.0.2)
 
 DEPENDENCIES
   boxen (= 1.2.0)
@@ -113,7 +113,7 @@ DEPENDENCIES
   osx (= 1.1.0)
   postgresql (= 1.0.0)
   ruby (= 4.0.0)
-  stdlib (= 3.0.0)
+  stdlib (= 4.0.2)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (= 1.0.2)

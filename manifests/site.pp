@@ -62,8 +62,11 @@ node default {
   # include ruby::1_8_7
   # include ruby::1_9_2
   include ruby::1_9_3
-  include ruby::2_0_0_p0
 
+  # Set the global default ruby (auto-installs it if it can)
+  class { 'ruby::global':
+    version => '2.0.0-p0'
+  }
   # common, useful packages
   package {
     [
