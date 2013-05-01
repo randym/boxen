@@ -51,7 +51,6 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
   # core modules, needed for most things
   include git
-  include github_for_mac
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -63,51 +62,6 @@ node default {
   # include ruby::1_9_2
   include ruby::1_9_3
 
-  # Set the global default ruby (auto-installs it if it can)
-  class { 'ruby::global':
-    version => '2.0.0-p0'
-  }
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
-  }
-
-  file { "${boxen::config::srcdir}/boxen":
-    ensure => link,
-    target => $boxen::config::repodir
-  }
-
-  # osx setings
-  include osx::global::disable_key_press_and_hold
-  include osx::global::enable_keyboard_control_access
-  include osx::global::expand_print_dialog
-  include osx::global::expand_save_dialog
-
-  include osx::dock::autohide
-
-  include osx::universal_access::ctrl_mod_zoom
-
-  include osx::no_network_dsstores
-
-  # Firefox
-  include firefox
-
-  # tmux
-  include tmux
-
-  # virtual box
-  include virtualbox
-
-  # hipchat
-  include hipchat
-
-  # chrome
-  include chrome
-
   # memcached
   include memcached
 
@@ -117,7 +71,20 @@ node default {
   # wget
   include wget
 
-  # macvim
-  include macvim
+  # common, useful packages
+  package {
+    [
+      'ack',
+      'findutils',
+      'gnu-tar'
+    ]:
+  }
 
+  file { "${boxen::config::srcdir}/repo":
+    ensure => link,
+    target => $boxen::config::repodir
+  }
+
+  
+   
 }
