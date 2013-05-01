@@ -32,5 +32,18 @@ class people::randym {
   # chrome
   include chrome
 
+  # specify ruby 2.0
   include ruby::2_0_0_p0
+
+  # tunnelblick
+  include tunnelblick
+
+  # vagrant
+  include vagrant
+  
+  # iterm2 stable version
+  include iterm2::stable
+
+  # skype
+  include skype
 }
