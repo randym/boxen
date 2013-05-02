@@ -38,10 +38,10 @@ github "wget",           "1.0.0"
 github "macvim",         "1.0.0"
 github "sysctl",         "1.0.0"
 github "vagrant",        "2.0.6"
-github "tunnelblick",    "1.0.1b", :repo => "randym/puppet-tunnelblick"
 github "iterm2",         "1.0.2"
 github "skype",          "1.0.2"
 github "repository"      "2.0.2"
 # Optional/custom modules. There are tons available at
 
+github "tunnelblick",    "1.0.2", :repo => "randym/puppet-tunnelblick"
 # https://github.com/boxen.
