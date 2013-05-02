@@ -39,6 +39,11 @@ GITHUBTARBALL
     homebrew (1.1.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -64,6 +69,11 @@ GITHUBTARBALL
     ruby (4.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-skype
+  specs:
+    skype (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -77,6 +87,16 @@ GITHUBTARBALL
   remote: boxen/puppet-tmux
   specs:
     tmux (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tunnelblick
+  specs:
+    tunnelblick (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -108,15 +128,19 @@ DEPENDENCIES
   hipchat (= 1.0.2)
   homebrew (= 1.1.2)
   inifile (= 0.9.0)
+  iterm2 (= 1.0.2)
   macvim (= 1.0.0)
   memcached (= 1.2.0)
   osx (= 1.1.0)
   postgresql (= 1.0.0)
   ruby (= 4.0.0)
+  skype (= 1.0.2)
   stdlib (= 4.0.2)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (= 1.0.2)
+  tunnelblick (= 1.0.0)
+  vagrant (= 2.0.6)
   virtualbox (= 1.0.2)
   wget (= 1.0.0)
 
